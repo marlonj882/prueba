@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prueba</title>
-</head>
-<body>
-    <h1>Hola mundo </h1>
-    <h2>otro texto papa</h2>
-    <h3>otro mas rey</h3>
-    <h4>y otro mas princeso</h4>
-    <h5>y esta de regalo</h5>
-    <h6>otra mas</h6>
-    <h2>y otroooo</h2>
-    <h1>y otroooo</h1>
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SVG Filters</title>
+<style>
+  .grayscale { filter: grayscale(100%); }
+    .blur { filter: blur(5px); }
+      .invert { filter: invert(100%); }
+        .saturate { filter: saturate(200%); }
+          .brightness { filter: brightness(150%); }
+            .contrast { filter: contrast(200%); }
+              .sepia { filter: sepia(100%); }
+                .custom-color { filter: url(#colorMatrix); }
+                  .custom-blur { filter: url(#gaussianBlur); }
+                  </style>
+                  </head>
+                  <body>
+
+                  <svg width="0" height="0">
+                    <defs>
+                        <filter id="colorMatrix">
+                              <feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0 0 0 1 0"/>
+                                  </filter>
+                                      <filter id="gaussianBlur">
+                                            <feGaussianBlur stdDeviation="10" />
+                                                </filter>
+                                                  </defs>
+                                                  </svg>
+
+                                                  <img src="image.jpg" alt="Example Image" class="grayscale">
+                                                  <img src="image.jpg" alt="Example Image" class="blur">
+                                                  <img src="image.jpg" alt="Example Image" class="invert">
+                                                  <img src="image.jpg" alt="Example Image" class="saturate">
+                                                  <img src="image.jpg" alt="Example Image" class="brightness">
+                                                  <img src="image.jpg" alt="Example Image" class="contrast">
+                                                  <img src="image.jpg" alt="Example Image" class="sepia">
+                                                  <img src="image.jpg" alt="Example Image" class="custom-color">
+                                                  <img src="image.jpg" alt="Example Image" class="custom-blur">
+
+                                                  </body>
+                                                  </html>
+                                                  
